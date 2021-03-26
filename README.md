@@ -1,1 +1,5 @@
 # jojodz.github.io
+
+This is my latest version of Portfolio. It doesn't contain much ... <br/>
+But I took great pleasure in turning it into a nice rendering of my firsts steps into the dev world.
+Hope you'll like it &#x1F60A; 
