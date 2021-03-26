@@ -107,7 +107,7 @@ header a:last-child:hover{
 #home{
     height: 90vh;
     background-color: #fff;
-    background-image: url(../images/bg-wood.jpg);
+    background-image: url(bg-wood.jpg);
     background-size: cover;
     background-position: center;
     color: var(--color-bg);
