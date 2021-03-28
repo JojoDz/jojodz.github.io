@@ -19,7 +19,7 @@ body{
     font-family: var(--font-body);
     color: var(--color-body-font);
     width: 100%;
-    max-with: 1280px;
+    max-width: 1280px;
     height: 100%;
 }
 
