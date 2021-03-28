@@ -10,7 +10,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body{
@@ -58,22 +59,34 @@ p{
     color: var(--color-body-font);
     text-shadow: none;
     text-decoration: underline;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 
 /* ------------------------- HEADER ------------------------------------ */
 header{
     height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid var(--color-secondary);
     padding-left: 3%; 
     padding-right: 3.1%;
 }
 #logo{
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 5.65%;
     border-radius: 2px;
 }
@@ -87,6 +100,8 @@ header a{
 header a:hover{
     color: var(--color-headings-font);
     text-decoration: underline;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s; 
 }
 header a:last-child{
@@ -99,7 +114,8 @@ header a:last-child:hover{
     color: white;
     text-decoration: none;
     text-shadow: rgba(20, 60, 61, 0.5) 1px 1px;
-    box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+            box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
@@ -111,10 +127,19 @@ header a:last-child:hover{
     background-size: cover;
     background-position: center;
     color: var(--color-bg);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -143,8 +168,13 @@ header a:last-child:hover{
 }
 
 .card-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 15px;
     padding-top: 45px;
     padding-bottom: 30px;
@@ -152,11 +182,17 @@ header a:last-child:hover{
 
 .card-body{
     border-radius: 2px;
-    box-shadow: 1px 0px 3px rgb(154, 142, 142);
+    -webkit-box-shadow: 1px 0px 3px rgb(154, 142, 142);
+            box-shadow: 1px 0px 3px rgb(154, 142, 142);
     padding-top: 5%;
     padding-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color:rgba(255, 255, 255, 0.9);
 }
 
@@ -175,13 +211,24 @@ header a:last-child:hover{
     color: var(--color-bg);
     text-shadow: none;
     text-decoration: underline;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
 }
 .boutons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 4%;
 }
 .boutons a{
@@ -199,23 +246,34 @@ header a:last-child:hover{
     text-decoration: none;
     color: white;
     text-shadow: rgba(20, 60, 61, 0.5) 1px 1px;
-    box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+            box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
 }
 
 /* ------------------------- BIO ------------------------------------ */
 #bio{
     height: 100vh;
     background-color: #fff;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 4%;
 }
 
 #bio h2{
     justify-self: flex-start;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-left: 2.2em;
     margin-bottom: 1em;
     color: var(--color-body-font);
@@ -234,43 +292,63 @@ header a:last-child:hover{
 }
 
 .id-card{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     padding: 15px;
     padding-top: 45px;
     padding-bottom: 30px;
-    box-shadow: 1px 0px 3px rgb(154, 142, 142);
+    -webkit-box-shadow: 1px 0px 3px rgb(154, 142, 142);
+            box-shadow: 1px 0px 3px rgb(154, 142, 142);
     text-align: left;
 }
 
 .id-card img{
     height: 170px;
     width: 170px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 50%;
     position: absolute;
     text-align: center;
     right: 10%;
     top: -15%;
-    transform: scale(1) rotate(5deg);
+    -webkit-transform: scale(1) rotate(5deg);
+        -ms-transform: scale(1) rotate(5deg);
+            transform: scale(1) rotate(5deg);
+    -webkit-transition: .75s;
+    -o-transition: .75s;
     transition: .75s;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 .id-card img:hover {
-    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
 }
 
 .skills-card{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 1px 1px 3px rgb(154, 142, 142);
+    -webkit-box-shadow: 1px 1px 3px rgb(154, 142, 142);
+            box-shadow: 1px 1px 3px rgb(154, 142, 142);
     padding: 15px;
     padding-top: 45px;
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color:rgba(255, 255, 255, 0.7);
     position: relative;
 }
@@ -285,9 +363,14 @@ header a:last-child:hover{
     margin: auto;
 }
 .soft-hardSkills-card{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .soft-hardSkills-card h4{
@@ -330,6 +413,7 @@ header a:last-child:hover{
 .iconsProjects{
     margin-top: 20px;
     margin-bottom: 20px;
+    position: -webkit-sticky;
     position: sticky;
     top: 10px;
     text-align: center;
@@ -340,10 +424,19 @@ header a:last-child:hover{
     width: 30px;
     height: 30px;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 20px;
     font-weight: 800; 
     padding: 20px;
@@ -351,13 +444,16 @@ header a:last-child:hover{
 
 .iconsProjects a:hover{
     background: #02C7B4;
-    box-shadow: 1px 0px 3px rgb(17, 17, 17);
+    -webkit-box-shadow: 1px 0px 3px rgb(17, 17, 17);
+            box-shadow: 1px 0px 3px rgb(17, 17, 17);
 }
 
 /* Créations Web */
 #projectWeb, #projectCode, #projectPrototype{
     margin-left: 4.5em;
-    transform: translateY(-15%);
+    -webkit-transform: translateY(-15%);
+        -ms-transform: translateY(-15%);
+            transform: translateY(-15%);
 }
 #projectWeb h3,  #projectCode h3 , #projectPrototype h3{
     font-size: 2em;
@@ -366,14 +462,24 @@ header a:last-child:hover{
     background-color:var(--color-bg);
 }
 .projetWebContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* border: 1px solid white;  */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 1px 1px 3px rgb(154, 142, 142);
+    -webkit-box-shadow: 1px 1px 3px rgb(154, 142, 142);
+            box-shadow: 1px 1px 3px rgb(154, 142, 142);
     padding-left: 40px;
     margin-top: 20px;
     margin-bottom: 50px; 
@@ -383,15 +489,22 @@ header a:last-child:hover{
     width: 50%;
     background-color: var(--color-headings-font);
     margin-right: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center; 
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
 }
 
 .projectImgContainer img{
     width: 400px;
     height: 400px;
-    object-fit: contain;  
+    -o-object-fit: contain;
+       object-fit: contain;  
 }
 .projectBasicInfo{
     /* border: 1px solid orangered; */
@@ -410,9 +523,15 @@ header a:last-child:hover{
 
 .projectBasicInfo ul{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 15px 0;
 }
 
@@ -428,8 +547,13 @@ header a:last-child:hover{
 #projectPrototype p{
     margin: auto;
     padding : 35px 15px 30px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color:rgba(17,17,17, 0.3);
     margin-bottom: 2em;
 }
@@ -439,11 +563,18 @@ header a:last-child:hover{
     margin: auto;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+            box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
     padding : 35px 15px 30px 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
     background-color:var(--color-headings-font);
 }
 /* ------ SLIDER ------- */
@@ -451,9 +582,15 @@ header a:last-child:hover{
     position: relative;
     width: 100%;
     min-height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 .prototypes .slider .imgBx{
     position: absolute;
@@ -462,18 +599,32 @@ header a:last-child:hover{
     width: 100%;
     height: 100%;
     padding: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
     z-index: 1;
-    clip-path: circle(0 at center); 
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center); 
 }
 .prototypes .slider input[type="radio"]:checked + .imgBx {
    z-index: 10; 
-   clip-path: circle(1000px at center); 
-   transition-delay: 0.75s;
+   -webkit-clip-path: circle(1000px at center); 
+           clip-path: circle(1000px at center); 
+   -webkit-transition-delay: 0.75s; 
+        -o-transition-delay: 0.75s; 
+           transition-delay: 0.75s;
 }
 .prototypes .slider .imgBx img {
     position: absolute;
@@ -481,9 +632,15 @@ header a:last-child:hover{
     left: 0;
     width: 95%;
     height: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 5%;
 }
 .prototypes .slider .imgBx .content {
@@ -520,8 +677,11 @@ header a:last-child:hover{
 }
 .prototypes .slider .imgBx .content a:hover {
     color: white;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s; 
-    box-shadow: 5px 5px 2px 2px rgba(255,255,255,0.7);
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(255,255,255,0.7); 
+            box-shadow: 5px 5px 2px 2px rgba(255,255,255,0.7);
 }
 .prototypes .slider input[type="radio"] {
     position: relative;
@@ -551,9 +711,15 @@ header a:last-child:hover{
 
 .contactContainer{
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 
@@ -583,10 +749,19 @@ header a:last-child:hover{
     margin-bottom: 25px;
 }
 #contactLinks{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #contactLinks a{
     padding: 10px 5px 15px 5px;
@@ -600,7 +775,8 @@ header a:last-child:hover{
     color: #0077B5;
     border-radius: 2px;
     font-size: 30px;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin-left: 13%;
     margin-top: 3%;
     padding: 1px 5px 1px 5px;
@@ -608,12 +784,15 @@ header a:last-child:hover{
 #contactLinks a:nth-child(2):hover{
     background: #ffffff;
     color: var(--color-headings-font);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 #contactLinks a:hover{
     background: #ffffff;
     color: var(--color-headings-font);
-    box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+            box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
     border-radius: 2px;
 }
 #calendly{
@@ -645,9 +824,15 @@ footer{
     height: 10%;
     text-align: center;
     font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #ffffff;
     color: var(--color-body-font);
     padding: 0 50px;
@@ -658,8 +843,12 @@ footer p{
     font-style: italic;
 }
 footer nav{
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
 }
 footer a{
@@ -672,6 +861,8 @@ footer a{
 footer a:hover{
     color: var(--color-headings-font);
     text-decoration: underline;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s; 
 }
 footer a:first-child{
@@ -683,19 +874,30 @@ footer a:first-child{
     border-radius: 2px;
     padding: 10px;
     background: var(--color-headings-font);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 #contactFoot:hover{
     color: #ffffff;
     text-decoration: none;
     text-shadow: rgba(20, 60, 61, 0.5) 1px 1px;
-    box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+    -webkit-box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
+            box-shadow: 5px 5px 2px 2px rgba(84,84,84, 0.5);
 }
 #sociallistFooter{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 #sociallistFooter li{
     list-style: none;
@@ -707,12 +909,19 @@ footer a:first-child{
     color: var(--color-body-font);
 }
 #sociallistFooter i{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 #sociallistFooter i:hover{
-    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
 }
 #sociallistFooter a:last-child{
     margin-right: 0px;
@@ -723,9 +932,12 @@ footer a:first-child{
 }
 #sociallistFooter i:hover{
     color: var(--color-headings-font);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
     border-radius: 3px;
-    box-shadow: 4px 4px 2px 2px rgba(84,84,84, 0.5);
+    -webkit-box-shadow: 4px 4px 2px 2px rgba(84,84,84, 0.5);
+            box-shadow: 4px 4px 2px 2px rgba(84,84,84, 0.5);
 }
 
 
@@ -809,8 +1021,13 @@ footer a:first-child{
     }
     #projectPrototype p{
         padding : 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-color:rgba(17,17,17, 0.3);
         margin-bottom: .5em;
     }
@@ -939,19 +1156,30 @@ footer a:first-child{
         height: 730vh;
     }
     #projectWeb, #projectCode, #projectPrototype{
-        transform: translateY(-8%);
+        -webkit-transform: translateY(-8%);
+            -ms-transform: translateY(-8%);
+                transform: translateY(-8%);
     }
     .projetWebContainer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-left: 13px;
     }
     .projectImgContainer{
         width: 50%;
         background-color: var(--color-headings-font);
         margin-right: 1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center; 
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; 
+        -webkit-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
     }
 }
 @media screen and (max-width: 993px) {
@@ -986,14 +1214,19 @@ footer a:first-child{
         height: 130vh;
     }
     .contactContainer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .contactContainer img{
         width: 25%;
         height: 25%;
     }
     #contactLinks a:nth-child(2){
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
         margin-left: 0;
         margin-top: 0;
     }
@@ -1124,7 +1357,10 @@ footer a:first-child{
         height: 160vh;
     }
     .soft-hardSkills-card{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .projectImgContainer {
         width: 90%;
@@ -1164,7 +1400,10 @@ footer a:first-child{
         height: 760vh;
     }
     footer {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-top: 2em;
     }
     footer p, footer a {
