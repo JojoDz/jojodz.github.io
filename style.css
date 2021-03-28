@@ -138,7 +138,7 @@ header a:last-child:hover{
     height: 51%;
     position: absolute;
     right: 50%;
-    bottom: -30%;
+    bottom: -33%;
     margin: auto;
 }
 
@@ -210,7 +210,7 @@ header a:last-child:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7%;
+    margin: 4%;
 }
 
 #bio h2{
@@ -306,7 +306,7 @@ header a:last-child:hover{
 /* ------------------------- PROJECTS ---------------------------------- */
 
 #projects{
-    height: 520vh;
+    height: 510vh;
     background-color:black;
     padding: 40px;
     color: white;
@@ -621,6 +621,7 @@ header a:last-child:hover{
     padding: 2px 5px 2px 5px;
     margin-top: 20px;
     border-radius: 2px;
+    position: relative;
 }
 
 #calendly:hover{
@@ -628,6 +629,11 @@ header a:last-child:hover{
     color: var(--color-headings-font);
     background: rgba(255, 255, 255, 0.9);
     text-shadow: rgba(20, 60, 61, 0.5) 1px 1px;
+}
+#calendly img{
+    width: 10%;
+    height: 10%;
+    display: inline;
 }
 
 /* ------------------------- FOOTER ------------------------------- */
