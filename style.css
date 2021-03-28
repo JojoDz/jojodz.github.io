@@ -19,6 +19,7 @@ body{
     font-family: var(--font-body);
     color: var(--color-body-font);
     width: 100%;
+    max-with: 1280px;
     height: 100%;
 }
 
@@ -277,7 +278,7 @@ header a:last-child:hover{
 .skills-card::after{
     content: "";
     background: var(--color-headings-font);
-    width: 3px;
+    width: 0.2%;
     height: 78%;
     position: absolute;
     left: 25%;;
@@ -382,7 +383,10 @@ header a:last-child:hover{
     /* border: 1px solid greenyellow; */
     width: 50%;
     background-color: var(--color-headings-font);
-    margin-right: 1em;  
+    margin-right: 1em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 .projectImgContainer img{
@@ -738,7 +742,51 @@ footer a:first-child{
 }
 
 /* ------------------------- RESPONSIVE ----------------------------- */
-@media (max-width: 768px) {
+/* à vérifier sur écran plus grand */
+@media screen and (min-width:1920px) {
+    #logo{
+        width: 5%;
+    }
+    #home::after{
+        height: 70%;
+        bottom: -35%;
+    }
+    #bio{
+        margin: 2%;
+    }
+    .id-card img{
+        top: -20%;
+    }
+    .skills-card::after{
+        height: 85%;
+        /* left: 25%;;
+        bottom: -78%; */
+    }
+    #projects{
+        height: 360vh;
+    }
+    .projectImgContainer{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    #calendly img{
+        width: 5%;
+        height: 5%;
+        display: inline;
+    }
+    footer{
+        border-top: .75px solid var(--color-secondary);
+    }
+    #sociallistFooter a{
+        margin: 20px;
+        background: white;
+        color: var(--color-body-font);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     .prototypes .slider .imgBx {
         padding: 40px;
     }
