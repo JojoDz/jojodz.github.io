@@ -135,7 +135,7 @@ header a:last-child:hover{
 #home::after{
     content: "";
     background: var(--color-headings-font);
-    width: 0.2%;
+    width: 3px;
     height: 51%;
     position: absolute;
     right: 50%;
@@ -158,7 +158,7 @@ header a:last-child:hover{
     padding-bottom: 5%;
     display: flex;
     flex-direction: column;
-    background-color:rgba(255, 255, 255, 0.9)
+    background-color:rgba(255, 255, 255, 0.9);
 }
 
 .card-body p{
@@ -278,7 +278,7 @@ header a:last-child:hover{
 .skills-card::after{
     content: "";
     background: var(--color-headings-font);
-    width: 0.2%;
+    width: 3px;
     height: 78%;
     position: absolute;
     left: 25%;;
@@ -392,8 +392,7 @@ header a:last-child:hover{
 .projectImgContainer img{
     width: 400px;
     height: 400px;
-    object-fit: contain;
-    
+    object-fit: contain;  
 }
 .projectBasicInfo{
     /* border: 1px solid orangered; */
@@ -443,7 +442,6 @@ header a:last-child:hover{
     border-bottom-right-radius: 5px;
     box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
     padding : 35px 15px 30px 30px;
-    height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -632,7 +630,7 @@ header a:last-child:hover{
     text-decoration: none;
     color: var(--color-headings-font);
     background: rgba(255, 255, 255, 0.9);
-    text-shadow: rgba(20, 60, 61, 0.5) 1px 1px;
+    /* text-shadow: rgba(20, 60, 61, 0.5) 1px 1px; */
 }
 #calendly img{
     width: 10%;
@@ -785,8 +783,277 @@ footer a:first-child{
     }
 }
 
+@media screen and (max-width : 1230px) {
+    .card-body p{
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width : 1210px) {
+    #projects{
+        height: 515vh;
+    }
+}
+@media screen and (max-width : 1190px) {
+    #projectWeb h3,  #projectCode h3 , #projectPrototype h3{
+        font-size: 1.6em;
+    }
+    #projects{
+        height: 500vh;
+    }
+    .projetWebContainer{
+        margin-bottom: 25px; 
+    }
+    .upper{
+        position: relative;
+        top: -7px;
+    }
+    #projectPrototype p{
+        padding : 15px;
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(17,17,17, 0.3);
+        margin-bottom: .5em;
+    }
+    .prototypes{
+        width: 60vh;
+        height: 90vh;
+        padding : 15px;
+    }
+    .prototypes .slider input[type="radio"] {
+        position: relative;
+        z-index: 1000;
+        margin: 4%;
+        margin-bottom: -10%;
+    }
+}
+@media screen and (max-width : 1178px) {
+    h1{
+        font-size: 4.5em;
+    }
+}
+@media screen and (max-width : 1160px) {
+    #home h1 {
+        font-size: 4em;
+    }
+    #home h2 {
+        font-size: 1.6em;
+    } 
+    #home::after{
+        height: 60%;
+        bottom: -33%;
+    }
+    #home .card-header{
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #home .card-body{
+        padding: 5%;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        height: 50%;
+    }
+    #home .card-body p{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    #home .boutons{
+        padding: 1%;
+    }
+    #home .boutons a{
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width : 1090px) {
+    .prototypes{
+        width: 50vh;
+        height: 90vh;
+    }
+    .prototypes .slider .imgBx img {
+        position: absolute;
+        top: 2%;
+        left: 7%;
+        width: 90%;
+        height: 90%;
+    }
+    .prototypes .slider input[type="radio"] {
+        position: relative;
+        z-index: 1000;
+        margin: 5%;
+        margin-bottom: 2.5%;
+    }
+    #contactLinks a{
+        font-size: 16px;
+    }
+    #contactLinks a:nth-child(2){
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    #projects{
+        height: 510vh;
+    }
+}
+@media screen and (max-width: 1044px) {
+    #projects{
+        height: 515vh;
+    }
+}
+@media screen and (max-width: 1034px) {
+    #projects{
+        height: 520vh;
+    }
+}
+@media screen and (max-width: 1025px) {
+    #projects{
+        height: 530vh;
+    }
+}
+@media screen and (max-width: 1020px) {
+    #projects{
+        height: 540vh;
+    }
+}
+@media screen and (max-width: 1008px) {
+    #projects{
+        height: 545vh;
+    }
+}
+@media screen and (max-width: 1002px) {
+    #projects{
+        height: 550vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #home::after{
+        height: 50%;
+        bottom: -27%;
+    }
+    #home .id-card img{
+        right: 39%;
+        top: -17%;
+    }
+    #projects{
+        height: 730vh;
+    }
+    #projectWeb, #projectCode, #projectPrototype{
+        transform: translateY(-8%);
+    }
+    .projetWebContainer{
+        flex-direction: column;
+        padding-left: 13px;
+    }
+    .projectImgContainer{
+        width: 50%;
+        background-color: var(--color-headings-font);
+        margin-right: 1em;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+@media screen and (max-width: 993px) {
+    #home::after{
+        height: 50%;
+        bottom: -36%;
+    } 
+    #home .card-body{
+        height: 45%;
+    }
+    #bio {
+        height: 120vh;
+    }
+    #projects{
+        height: 710vh;
+    }
+    .projectImgContainer img{
+        width: 350px;
+        height: 350px;  
+    }
+}
 
+@media screen and (max-width: 910px){
+    #projects{
+        height: 690vh;
+    }
+    .projectImgContainer img{
+        width: 300px;
+        height: 300px;  
+    }
+    #contact{
+        height: 130vh;
+    }
+    .contactContainer{
+        flex-direction: column;
+    }
+    .contactContainer img{
+        width: 25%;
+        height: 25%;
+    }
+    #contactLinks a:nth-child(2){
+        align-self: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    footer {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:890px){
+    #name{
+        font-size: 1.6em;
+    }
+}
+@media screen and (max-width: 870px) {
+    #home::after{
+        height: 60%;
+        bottom: -47%;
+    } 
+    #bio {
+        height: 130vh;
+    }
+    #bio h2{
+        margin-top: 1.6em;
+    }
+    footer, footer p{
+        font-size: 9px;
+    }
+    footer a{
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 830px){
+    #contactLinks a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 810px){
+    #projects{
+        height: 670vh;
+    }
+    .projectImgContainer img{
+        width: 260px;
+        height: 260px;  
+    }
+}
+@media screen and (max-width: 780px){
+    #projects{
+        height: 680vh;
+    }
+}
 @media screen and (max-width: 768px) {
+    #bio {
+        height: 140vh;
+    }
+    #bio h2{
+        margin-top: 1.7em;
+    }
+    .id-card img{
+        height: 150px;
+        width: 150px;
+    }
     .prototypes .slider .imgBx {
         padding: 40px;
     }
@@ -796,5 +1063,147 @@ footer a:first-child{
     .prototypes .slider .imgBx .content p {
         font-size: 1em;
         margin-top: 10px;
+    }
+}
+@media screen and (max-width: 750px){
+    #contact{
+        height: 110vh;
+    }
+    #name{
+        font-size: 1.4em;
+    }
+    #contactLinks a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 730px){
+    #projects{
+        height: 690vh;
+    }
+    .projectImgContainer{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .boutons a{
+        font-size: 15px;
+    }
+    .soft-hardSkills-card li{
+        line-height: 2.5em;
+    }
+}
+@media screen and (max-width: 690px) {
+    #bio {
+        margin: 6%;
+    }
+    #bio h2{
+        padding-left: 1.4em;
+    } 
+    .id-card img{
+        right: 5%;
+        top: -10%;
+    }
+    #projects{
+        height: 700vh;
+    }
+    footer a{
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 670px){
+    #name{
+    font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 650px) {
+    #home::after{
+        height: 55%;
+    } 
+    #bio {
+        height: 160vh;
+    }
+    .soft-hardSkills-card{
+        flex-direction: column;
+    }
+    .projectImgContainer {
+        width: 90%;
+    }
+    .projectImgContainer img{
+        width: 220px;
+        height: 220px;  
+    }
+}
+@media screen and (max-width: 612px) {
+    #projects{
+        height: 710vh;
+    }
+    footer, footer p{
+        font-size: 8px;
+    }
+    footer a{
+        margin-right: 13px;
+    }
+}
+@media screen and (max-width: 590px) {
+    #projects{
+        height: 730vh;
+    }
+}
+@media screen and (max-width: 560px) {
+    #projects{
+        height: 740vh;
+    }
+}
+@media screen and (max-width: 539px) {
+    #home::after{
+        height: 44%;
+        bottom: -36%;
+    }
+    #projects{
+        height: 760vh;
+    }
+    footer {
+        flex-direction: column;
+        padding-top: 2em;
+    }
+    footer p, footer a {
+        padding-bottom: 1em;
+    }
+}
+@media screen and (max-width: 530px) {
+    h1{
+        margin-top: 2%;
+        line-height: 1em;
+        font-size: 3em;
+    }
+    #home::after{
+        height: 46%;
+        bottom: -35%;
+    } 
+    .card-body{
+        height: 43%;
+    }
+    .card-body p{
+        font-size: 15px;
+    }
+    .boutons a {
+        font-size: 13px;
+    }
+    #projects{
+        height: 780vh;
+    }
+}
+@media screen and (max-width: 520px) {
+    #bio {
+        height: 175vh;
+    }
+    #contact h2{
+       font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 510px) {
+    #projects{
+        height: 790vh;
     }
 }
