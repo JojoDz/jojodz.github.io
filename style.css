@@ -739,7 +739,7 @@ footer a:first-child{
 }
 
 /* ------------------------- RESPONSIVE ----------------------------- */
-/* à vérifier sur écran plus grand */
+/* à vérifier sur écran plus grand
 @media screen and (min-width:1920px) {
     #logo{
         width: 5%;
@@ -756,8 +756,8 @@ footer a:first-child{
     }
     .skills-card::after{
         height: 85%;
-        /* left: 25%;;
-        bottom: -78%; */
+        left: 25%;
+        bottom: -78%;
     }
     #projects{
         height: 360vh;
@@ -781,6 +781,7 @@ footer a:first-child{
         color: var(--color-body-font);
     }
 }
+ */
 
 @media screen and (max-width : 1230px) {
     .card-body p{
