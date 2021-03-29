@@ -4,7 +4,7 @@ jQuery(function(){
             if ($(this).scrollTop() > 200 ) {  // Quand on est à 200pixels du haut de page,
                 $('#scrollUp').css('right','1.5%'); // Replace l'image à 10pixels de la droite 
             } else { 
-                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+                $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par Javascript
             }
         });
     });

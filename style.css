@@ -7,12 +7,14 @@
     --font-body: 'Montserrat Alternates', sans-serif;
     --font-heading: 'Montserrat Subrayada', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 body{
     line-height: 1.5;
@@ -765,7 +767,7 @@ header a:last-child:hover{
 }
 #contactLinks a{
     padding: 10px 5px 15px 5px;
-    font-size: 18px;
+    font-size: 17px;
     color: #000;
     font-style:oblique;
     text-decoration: none;
