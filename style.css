@@ -154,7 +154,7 @@ header a:last-child:hover{
 } 
 
 .homeContainer{
-    max-width: 50%;  
+    width: 50%;  
     position: relative;
 }
 
@@ -1121,29 +1121,49 @@ footer a:first-child{
     }
 }
 @media screen and (max-width: 1034px) {
+    #home::after{
+        height: 69%;
+        bottom: -33.5%;
+    }
+    .homeContainer{
+        width: 55%;
+    }
+    .card-body{
+        height: 50%;
+    }
+    #bio{
+        height: 90vh;
+        margin: 0;
+    }
+    .skills-card::after{
+        height: 100%;
+        position: absolute;
+        left: 25%;;
+        bottom: -100%;
+        margin: auto;
+    }
     #projects{
-        height: 520vh;
+        height: 320vh;
+    }
+    #projectPrototype{
+        margin-top: 10%;
     }
 }
-@media screen and (max-width: 1025px) {
-    #projects{
-        height: 530vh;
-    }
-}
+
 @media screen and (max-width: 1020px) {
-    #projects{
+    /* #projects{
         height: 540vh;
-    }
+    } */
 }
 @media screen and (max-width: 1008px) {
-    #projects{
+    /* #projects{
         height: 545vh;
-    }
+    } */
 }
 @media screen and (max-width: 1002px) {
-    #projects{
+    /* #projects{
         height: 550vh;
-    }
+    } */
 }
 @media screen and (max-width: 1000px) {
     #home::after{
@@ -1279,15 +1299,25 @@ footer a:first-child{
     }
 }
 @media screen and (max-width: 768px) {
+    .homeContainer{
+        width: 60%;
+    }
+    #home::after{
+        height: 52%;
+        bottom: -26.75%;
+    }
     #bio {
-        height: 140vh;
+        height: 100vh;
     }
     #bio h2{
-        margin-top: 1.7em;
+        margin-top: 0;
     }
     .id-card img{
         height: 150px;
         width: 150px;
+    }
+    #projects{
+        height: 470vh;
     }
     .prototypes .slider .imgBx {
         padding: 40px;
@@ -1298,6 +1328,15 @@ footer a:first-child{
     .prototypes .slider .imgBx .content p {
         font-size: 1em;
         margin-top: 10px;
+    }
+    #contact{
+        height: 100vh;
+    }
+    .contactContainer {
+        transform: translateY(10%);
+    }
+    .contactContainer article{
+        width: 50%;
     }
 }
 @media screen and (max-width: 750px){
