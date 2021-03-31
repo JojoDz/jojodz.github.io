@@ -1432,14 +1432,53 @@ footer a:first-child{
         height: 740vh;
     }
 }
+@media screen and (max-width: 540px) {
+    #logo {
+        width: 8%;
+    }
+    header a{
+        font-size: 12px;
+    }
+    .homeContainer{
+        width: 70%;
+    }
+    #home::after{
+        height: 43%;
+        bottom: -29%;
+        right: 52%;
+    }
+    #projects{
+        height: 657vh;
+    }
+    .iconsProjects{
+        display: none;
+    }
+    #projectWeb, #projectCode, #projectPrototype{
+        margin-left: 1.8em;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    .contactContainer{
+        padding: 0;
+        -webkit-box-pack: flex-start;
+            -ms-flex-pack: flex-start;
+                justify-content: flex-start;
+    }
+    footer{
+        height: 8%;
+        padding: 0 15px;
+    }
+    #contactFoot{
+        padding: 5px;
+    }
+}
 @media screen and (max-width: 539px) {
     #home::after{
         height: 44%;
         bottom: -36%;
     }
-    #projects{
-        height: 760vh;
-    }
+
     footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1470,9 +1509,9 @@ footer a:first-child{
     .boutons a {
         font-size: 13px;
     }
-    #projects{
+    /* #projects{
         height: 780vh;
-    }
+    } */
 }
 @media screen and (max-width: 520px) {
     #bio {
@@ -1483,7 +1522,7 @@ footer a:first-child{
     }
 }
 @media screen and (max-width: 510px) {
-    #projects{
+    /* #projects{
         height: 790vh;
-    }
+    } */
 }
