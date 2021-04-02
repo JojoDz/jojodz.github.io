@@ -254,7 +254,7 @@ header a:last-child:hover{
 
 /* ------------------------- BIO ------------------------------------ */
 #bio{
-    height: 100vh;
+    height: 123vh;
     background-color: #fff;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -1012,7 +1012,7 @@ footer a:first-child{
         font-size: 1.6em;
     }
     #projects{
-        height: 500vh;
+        height: 546vh;
     }
     .projetWebContainer{
         margin-bottom: 25px; 
@@ -1525,4 +1525,46 @@ footer a:first-child{
     /* #projects{
         height: 790vh;
     } */
+}
+@media screen and (max-width: 411px) {
+    * {
+        border: 2px solid orangered;
+    }
+    header a{
+        padding: 0.5em;
+    } 
+    #home {
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    
+    #home::after{
+        display: none;
+    } 
+    .skills-card::after{
+        display: none;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    #projects{
+        height: 750vh;
+        transform: translateX(-30px);
+    }
+    .prototypes{
+        width: 100%;
+        height: 60%;
+    }
 }
