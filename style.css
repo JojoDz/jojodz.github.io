@@ -520,7 +520,7 @@ header a:last-child:hover{
 }
 
 .projectBasicInfo span{
-    text-decoration: underline;
+    color: rgb(84,84,84);
 }
 
 .projectBasicInfo ul{
@@ -538,14 +538,38 @@ header a:last-child:hover{
 }
 
 .projectBasicInfo li{
-    background-color:rgba(84,84,84, 0.5);
-    text-shadow: black 1px 1px;
     font-weight: bolder;
     border-radius: 5px;
     letter-spacing: 1px;
     padding: 10px;
 }
+.projectBasicInfo nav{
+    text-align: right;
+}
+.projectBasicInfo .links{
+    text-decoration: none;
+    color: black;
+    padding-right: 0;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 6em;
+    background: var(--color-headings-font);   
+}
 
+.projectBasicInfo .links:hover{
+        color: white;
+        text-decoration: none;
+        text-shadow: rgba(0, 0, 0, 0.9) 1px 1px;
+        -webkit-box-shadow: 5px 5px 2px 2px rgba(255, 255, 255, 0.4);
+                box-shadow: 5px 5px 2px 2px rgba(255, 255, 255, 0.4);
+    }
+.projectBasicInfo .first{
+    display: block;
+    margin-bottom: 0;
+    width: 22%;
+    height: 5%;
+    transform: translateX(355%);
+}
 #projectPrototype p{
     margin: auto;
     padding : 35px 15px 30px 30px;
@@ -817,7 +841,9 @@ header a:last-child:hover{
     height: 10%;
     display: inline;
 }
-
+#footerSeparator{
+    display: none;
+}
 /* ------------------------- FOOTER ------------------------------- */
 footer{
     position: absolute;
@@ -1012,7 +1038,7 @@ footer a:first-child{
         font-size: 1.6em;
     }
     #projects{
-        height: 546vh;
+        height: 560vh;
     }
     .projetWebContainer{
         margin-bottom: 25px; 
@@ -1084,7 +1110,11 @@ footer a:first-child{
         padding: 2%;
         margin-bottom: 5%;
     }
+    #projects{
+        height: 573vh;
+    }
 }
+
 @media screen and (max-width : 1090px) {
     .prototypes{
         width: 50vh;
@@ -1112,18 +1142,23 @@ footer a:first-child{
 }
 @media screen and (max-width: 1060px) {
     #projects{
-        height: 510vh;
+        height: 576vh;
+    }
+}
+@media screen and (max-width: 1057px) {
+    #projects{
+        height: 590vh;
     }
 }
 @media screen and (max-width: 1044px) {
     #projects{
-        height: 515vh;
+        height: 580vh;
     }
 }
 @media screen and (max-width: 1034px) {
     #home::after{
-        height: 69%;
-        bottom: -33.5%;
+        height: 45%;
+        bottom: -20.5%;
     }
     .homeContainer{
         width: 55%;
@@ -1132,8 +1167,8 @@ footer a:first-child{
         height: 50%;
     }
     #bio{
-        height: 90vh;
-        margin: 0;
+        height: 100vh;
+        margin-bottom: 10%;
     }
     .skills-card::after{
         height: 100%;
@@ -1143,27 +1178,40 @@ footer a:first-child{
         margin: auto;
     }
     #projects{
-        height: 320vh;
+        height: 602vh;
     }
     #projectPrototype{
         margin-top: 10%;
     }
 }
-
-@media screen and (max-width: 1020px) {
-    /* #projects{
-        height: 540vh;
-    } */
+@media screen and (max-width: 1024px) and (max-height: 1366px){
+    #home::after{
+        height: 55%;
+        bottom: -19.5%;
+    }
+    #bio{
+        height: 100vh;
+        margin-bottom: -30%;
+    }
+    #bio h2{
+        margin-top: -50%;
+    }
+    #projects{
+        height: 319vh;
+    }
+    #contact{
+        height: 50vh;
+    }
 }
-@media screen and (max-width: 1008px) {
-    /* #projects{
-        height: 545vh;
-    } */
+@media screen and (max-width: 1016px) {
+    #projects {
+        height: 616vh;
+    }
 }
-@media screen and (max-width: 1002px) {
-    /* #projects{
-        height: 550vh;
-    } */
+@media screen and (max-width: 1005px) {
+    #projects{
+        height: 630vh;
+    }
 }
 @media screen and (max-width: 1000px) {
     #home::after{
@@ -1175,7 +1223,7 @@ footer a:first-child{
         top: -17%;
     }
     #projects{
-        height: 730vh;
+        height: 813vh;
     }
     #projectWeb, #projectCode, #projectPrototype{
         -webkit-transform: translateY(-8%);
@@ -1216,17 +1264,32 @@ footer a:first-child{
         height: 120vh;
     }
     #projects{
-        height: 710vh;
+        height: 787vh;
     }
     .projectImgContainer img{
         width: 350px;
         height: 350px;  
     }
 }
+@media screen and (max-width: 985px){
+    #projects {
+        height: 803vh;
+    }
+}
+@media screen and (max-width: 945px){
+    #projects {
+        height: 820vh;
+    }
+}
+@media screen and (max-width: 923px){
+    #projects {
+        height: 830vh;
+    }
+}
 
 @media screen and (max-width: 910px){
     #projects{
-        height: 690vh;
+        height: 840vh;
     }
     .projectImgContainer img{
         width: 300px;
@@ -1286,7 +1349,7 @@ footer a:first-child{
 }
 @media screen and (max-width: 810px){
     #projects{
-        height: 670vh;
+        height: 860vh;
     }
     .projectImgContainer img{
         width: 260px;
@@ -1295,7 +1358,7 @@ footer a:first-child{
 }
 @media screen and (max-width: 780px){
     #projects{
-        height: 680vh;
+        height: 880vh;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1521,34 +1584,43 @@ footer a:first-child{
        font-size: 2.5em;
     }
 }
-@media screen and (max-width: 510px) {
-    /* #projects{
-        height: 790vh;
-    } */
-}
-@media screen and (max-width: 411px) {
-    * {
-        border: 2px solid orangered;
-    }
+@media screen and (max-width: 414px) {
     header a{
         padding: 0.5em;
     } 
     #home {
-        height: 100%;
+        height: 100vh;
         width: 100%;
         padding: 2em;
+    }
+    #home::after{
+        display: none;
     }
     #home h1{
         margin-top: 0;
         line-height: 1em;
         font-size: 2.6em;
     }
-    
-    #home::after{
-        display: none;
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #home .card-body {
+        height: 52%;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -5%;
     } 
+    #bio h2{
+        margin-top: -19%;
+    }
     .skills-card::after{
         display: none;
+    }
+    #projects{
+        height: 760vh;
+        width: 100%;
     }
     .projectBasicInfo ul{
         display: block;
@@ -1559,12 +1631,315 @@ footer a:first-child{
         text-shadow: none;
         padding: 2px;
     }
-    #projects{
-        height: 750vh;
-        transform: translateX(-30px);
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 40%;
+        height: 10%;
+        transform: translateX(150%);
     }
+    
     .prototypes{
         width: 100%;
         height: 60%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact .contactContainer{
+        transform: translateY(-1%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 165%;
+        margin-top: 0;
+    }
+    #calendly img{
+        width: 11%;
+        height: 11%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    #sociallistFooter{
+        justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 411px) {
+    header a{
+        padding: 0.5em;
+    } 
+    #home {
+        height: 100%;
+        width: 100%;
+        padding: 2em;
+    }
+    #home::after{
+        display: none;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -5%;
+    } 
+    #bio h2{
+        margin-top: -19%;
+    }
+    .skills-card::after{
+        display: none;
+    }
+    #projects{
+        height: 760vh;
+        width: 100%;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 40%;
+        height: 10%;
+        transform: translateX(150%);
+    }
+    
+    .prototypes{
+        width: 100%;
+        height: 60%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact .contactContainer{
+        transform: translateY(-1%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 165%;
+        margin-top: 0;
+    }
+    #calendly img{
+        width: 11%;
+        height: 11%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    #sociallistFooter{
+        justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 375px) {
+    #bio{
+        height: 204vh;
+    } 
+    #bio h2{
+        margin-top: -21%;
+    } 
+    #projects{
+        height: 903vh;
+    }
+}
+@media screen and (max-width: 320px) {
+    main{
+        width: 100%;
+        background: black;
+    }
+    header a{
+        padding: 0.3em;
+    } 
+    #home h1{
+        font-size: 2em;
+    }
+    #home h2{
+        font-size: 1.3em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #bio{
+        margin-top: 0;
+        margin-bottom: -5%;
+        height: 277vh;
+    } 
+    #bio h2{
+        margin-top: -30%;
+    }
+    .id-card img {
+        right: 5%;
+        top: -5%;
+        width: 110px;
+        height: 110px;
+    }
+    #projects{
+        height: 1180vh;
+    }
+    #projects h2{
+        font-size: 2.4em;
+    }
+    .projetImgContainer{
+        width: 131%;
+    }
+    .prototypes{
+        width: 127%;
+        height: 60%;
+        transform: translateX(-10%);
+    }
+    .prototypes .slider .imgBx .content {
+        max-width: 75%;
+    }
+    .prototypes .slider .imgBx .content h4 {
+        font-size: 1.4em;
+    }
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact h2{
+        font-size: 2.4em;
+        margin-right: 5%;
+    }
+    #contact .contactContainer{
+        transform: translateY(-1%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 165%;
+        margin-top: 0;
+    }
+    #calendly img{
+        width: 11%;
+        height: 11%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    #sociallistFooter{
+        justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+        right: -100px;
+    }
+}
+@media screen and (max-width: 280px) {
+    #logo{
+        width: 10%;
+    }
+    header a{
+        font-size: 10px;
+    }
+    .homeContainer{
+        width: 90%;
+    }
+    #contact h2{
+        font-size: 2em;
+    } 
+    #bio{
+        margin-top: 0;
+        margin-bottom: -5%;
+        height: 240vh;
+    } 
+    #bio h2{
+        margin-top: -23%;
+        margin-left: -10%;
+    }
+    #projects{
+        height: 1097vh;
+    }
+    #projects h2{
+        margin: 0;
+    }
+    .projetWebContainer{
+        width: 100%;
+    }
+    #contact h2{
+        margin-right: 5%;
+        margin-left: -3%;
     }
 }
