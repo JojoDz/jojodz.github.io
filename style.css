@@ -1268,9 +1268,9 @@ footer a:first-child{
     .projectBasicInfo .first{
         width: 137px;
         height: 36px;
-        -webkit-transform: translateX(253%);
-            -ms-transform: translateX(253%);
-                transform: translateX(253%);
+        -webkit-transform: translateX(200%);
+            -ms-transform: translateX(200%);
+                transform: translateX(200%);
     }
     #projects{
         height: 552vh;
