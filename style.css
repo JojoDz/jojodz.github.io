@@ -1975,10 +1975,7 @@ footer a:first-child{
        font-size: 2.5em;
     }
 }
-@media screen and (max-width: 424px) {
-    header a{
-        padding: 0.5em;
-    } 
+@media screen and (max-width: 480px) {
     #home {
         height: 100vh;
         width: 100%;
@@ -2001,7 +1998,8 @@ footer a:first-child{
     #bio{
         width: 100%;
         margin-left: 0;
-        margin-bottom: 130%;
+        margin-top: 150px;
+        margin-bottom: 580px;
     } 
     #bio h2{
         margin-top: -19%;
@@ -2010,7 +2008,7 @@ footer a:first-child{
         display: none;
     }
     #projects{
-        height: 733vh;
+        height: 905vh;
         width: 100%;
     }
     .projectBasicInfo ul{
@@ -2024,11 +2022,127 @@ footer a:first-child{
     }
     .projectBasicInfo .first{
         text-align: center;
-        width: 120px;
+        width: 138px;
         height: 36px;
-        -webkit-transform: translateX(109%);
-            -ms-transform: translateX(109%);
-                transform: translateX(109%);
+        -webkit-transform: translateX(137%);
+            -ms-transform: translateX(137%);
+                transform: translateX(137%);
+    }
+    
+    .prototypes{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact h2{
+        margin-top:-45%;
+    }
+    #contact .contactContainer{
+        -webkit-transform: translateY(-1%) translateX(0%);
+            -ms-transform: translateY(-1%) translateX(0%);
+                transform: translateY(-1%) translateX(0%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    #calendly img{
+        width: 8%;
+        height: 8%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    footer p{
+        margin-top: 1em;
+    }
+    #sociallistFooter{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 460px) {
+    #home {
+        height: 100vh;
+        width: 100%;
+        padding: 2em;
+    }
+    #home::after{
+        display: none;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #home .card-body {
+        height: 52%;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 150px;
+        margin-bottom: 580px;
+    } 
+    #bio h2{
+        margin-top: -19%;
+    }
+    .skills-card::after{
+        display: none;
+    }
+    #projects{
+        height: 920vh;
+        width: 100%;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 138px;
+        height: 36px;
+        -webkit-transform: translateX(97%);
+            -ms-transform: translateX(97%);
+                transform: translateX(97%);
     }
     
     .prototypes{
@@ -2044,9 +2158,122 @@ footer a:first-child{
         margin-top:-45%;
     }
     #contact .contactContainer{
-        -webkit-transform: translateY(-1%) translateX(16%);
-            -ms-transform: translateY(-1%) translateX(16%);
-                transform: translateY(-1%) translateX(16%);
+        -webkit-transform: translateY(-1%) translateX(0%);
+            -ms-transform: translateY(-1%) translateX(0%);
+                transform: translateY(-1%) translateX(0%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    #calendly img{
+        width: 8%;
+        height: 8%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    #sociallistFooter{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 424px) {
+    #home {
+        height: 100vh;
+        width: 100%;
+        padding: 2em;
+    }
+    #home::after{
+        display: none;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #home .card-body {
+        height: 52%;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 200px;
+        margin-bottom: 500px;
+    } 
+    #bio h2{
+        margin-top: -19%;
+    }
+    .skills-card::after{
+        display: none;
+    }
+    #projects{
+        height: 960vh;
+        width: 100%;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 138px;
+        height: 36px;
+        -webkit-transform: translateX(97%);
+            -ms-transform: translateX(97%);
+                transform: translateX(97%);
+    }
+    
+    .prototypes{
+        width: 100%;
+        height: 60%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact h2{
+        margin-top:-45%;
+    }
+    #contact .contactContainer{
+        -webkit-transform: translateY(-1%) translateX(0%);
+            -ms-transform: translateY(-1%) translateX(0%);
+                transform: translateY(-1%) translateX(0%);
     }
     #calendly{
         padding: 10px;
@@ -2073,6 +2300,120 @@ footer a:first-child{
         display: block;
         bottom: 10%;
     }
+    #sociallistFooter{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 424px) and (max-height: 828px){
+    #home {
+        height: 100vh;
+        width: 100%;
+        padding: 2em;
+    }
+    #home::after{
+        display: none;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #home .card-body {
+        height: 52%;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0px;
+        margin-bottom: 450px;
+    } 
+    #bio h2{
+        margin-top: -19%;
+    }
+    .skills-card::after{
+        display: none;
+    }
+    #projects{
+        height: 660vh;
+        width: 100%;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 138px;
+        height: 36px;
+        -webkit-transform: translateX(97%);
+            -ms-transform: translateX(97%);
+                transform: translateX(97%);
+    }
+    
+    .prototypes{
+        width: 100%;
+        height: 60%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact h2{
+        margin-top:-45%;
+    }
+    #contact .contactContainer{
+        -webkit-transform: translateY(-1%) translateX(0%);
+            -ms-transform: translateY(-1%) translateX(0%);
+                transform: translateY(-1%) translateX(0%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 165%;
+        margin-top: 1.5em;
+    }
+    #calendly img{
+        width: 11%;
+        height: 11%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+
     #sociallistFooter{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
