@@ -1975,6 +1975,121 @@ footer a:first-child{
        font-size: 2.5em;
     }
 }
+@media screen and (max-width: 424px) {
+    header a{
+        padding: 0.5em;
+    } 
+    #home {
+        height: 100vh;
+        width: 100%;
+        padding: 2em;
+    }
+    #home::after{
+        display: none;
+    }
+    #home h1{
+        margin-top: 0;
+        line-height: 1em;
+        font-size: 2.6em;
+    }
+    .homeContainer{
+        margin-bottom: 2em;
+    }
+    #home .card-body {
+        height: 52%;
+    }
+    #bio{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 130%;
+    } 
+    #bio h2{
+        margin-top: -19%;
+    }
+    .skills-card::after{
+        display: none;
+    }
+    #projects{
+        height: 733vh;
+        width: 100%;
+    }
+    .projectBasicInfo ul{
+        display: block;
+        margin: 10px auto;
+    }
+    .projectBasicInfo li{
+        background-color:transparent;
+        text-shadow: none;
+        padding: 2px;
+    }
+    .projectBasicInfo .first{
+        text-align: center;
+        width: 120px;
+        height: 36px;
+        -webkit-transform: translateX(109%);
+            -ms-transform: translateX(109%);
+                transform: translateX(109%);
+    }
+    
+    .prototypes{
+        width: 100%;
+        height: 60%;
+    }
+
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    #contact h2{
+        margin-top:-45%;
+    }
+    #contact .contactContainer{
+        -webkit-transform: translateY(-1%) translateX(16%);
+            -ms-transform: translateY(-1%) translateX(16%);
+                transform: translateY(-1%) translateX(16%);
+    }
+    #calendly{
+        padding: 10px;
+        width: 165%;
+        margin-top: 0;
+    }
+    #calendly img{
+        width: 11%;
+        height: 11%;
+    }
+    #footerSeparator, footer{
+        position: relative;
+        top: 10%;
+    }
+    #footerSeparator{
+        display: block;
+        height: 1px;
+        background-color: var(--color-secondary);
+        border: none;
+    }
+    footer{
+        padding: 0;
+        border: none;
+        display: block;
+        bottom: 10%;
+    }
+    #sociallistFooter{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+    
+    #scrollUp{
+        bottom: 10%;
+    }
+}
 @media screen and (max-width: 414px) {
     header a{
         padding: 0.5em;
