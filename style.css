@@ -2811,6 +2811,7 @@ footer a:first-child{
     #projects{
         height: 810vh;
         width: 100%;
+        margin-bottom: 150px;
     }
     #projects h2 {
         margin-bottom: 0.2em;
