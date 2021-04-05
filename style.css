@@ -1002,12 +1002,27 @@ footer a:first-child{
 }
 
 /* ------------------------- RESPONSIVE ----------------------------- */
-@media screen and (max-width: 1920px){
+@media screen and (max-width: 1920px) and (max-height: 1080px){
+    #home::after {
+        height: 56%;
+        bottom: -26%;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        transform: translateX(501%);
+    }
+    #projects {
+        height: 3700px;
+    }
     .projectBasicInfo .first{
         width: 137px;
         height: 36px;
-        /* transform: translateX(498%); */
     }
+    #contact .contactContainer {
+        margin-top: 4.5em;
+    }
+
 }
 @media screen and (max-width:1910px) {
     #logo{
@@ -1084,7 +1099,7 @@ footer a:first-child{
             bottom: -168%;
     }
     #projects{
-        height: 385vh;
+        height: 3700px;
     }
     .projectImgContainer{
         display: -webkit-box;
@@ -1109,6 +1124,95 @@ footer a:first-child{
         margin: 20px;
         background: white;
         color: var(--color-body-font);
+    }
+}
+@media screen and (max-width: 1500px) and (max-height: 1000px) {
+    #home::after {
+        height: 67%;
+        bottom: -36.8%;
+    }
+    #bio {
+        margin: 6%;
+        margin-bottom: -11%;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        -webkit-transform: translateX(411%);
+            -ms-transform: translateX(411%);
+                transform: translateX(411%);
+    }
+    #projects {
+        height: 3736px;
+    }
+    #contact .contactContainer {
+        margin-top: 6em;
+    }
+}
+@media screen and (max-width: 1440px) and (max-height: 1024px) {
+    #home::after {
+        height: 67%;
+        bottom: -37.5%;
+    }
+    #bio {
+        margin: 6%;
+        margin-bottom: -11%;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        -webkit-transform: translateX(395%);
+            -ms-transform: translateX(395%);
+                transform: translateX(395%);
+    }
+    #projects {
+        height: 3736px;
+    }
+    #contact .contactContainer {
+        margin-top: 5em;
+    }
+}
+@media screen and (max-width: 1368px) and (max-height: 912px) {
+    #home::after {
+        height: 62%;
+        bottom: -34.5%;
+    }
+    #bio {
+        margin: 6%;
+        margin-bottom: -11%;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        -webkit-transform: translateX(377%);
+            -ms-transform: translateX(377%);
+                transform: translateX(377%);
+    }
+    #projects {
+        height: 3643px;
+    }
+    #contact .contactContainer {
+        margin-top: 5em;
+    }
+}
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    #home::after {
+        height: 49%;
+        bottom: -25.5%;
+    }
+    #bio {
+        margin: 6%;
+        margin-bottom: -11%;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        -webkit-transform: translateX(346%);
+            -ms-transform: translateX(346%);
+                transform: translateX(346%);
+    }
+    #projects {
+        height: 3560px;
     }
 }
 @media screen and (max-width : 1230px) {
@@ -1163,7 +1267,6 @@ footer a:first-child{
         margin-bottom: -10%;
     }
 }
-
 @media screen and (max-width : 1190px) {
     #projectWeb h3,  #projectCode h3 , #projectPrototype h3{
         font-size: 1.6em;
@@ -1245,37 +1348,60 @@ footer a:first-child{
         height: 573vh;
     }
 }
-@media screen and (max-width : 1152px) and (max-height: 641px){
+@media screen and (max-width : 1152px) and (max-height: 700px){
+    #home::after {
+        height: 67%;
+        bottom: -39.5%;
+    }
     #bio{
         height: 175vh;
     }
     .projectBasicInfo .first{
         width: 137px;
         height: 36px;
-        -webkit-transform: translateX(253%);
-            -ms-transform: translateX(253%);
-                transform: translateX(253%);
+        -webkit-transform: translateX(252%);
+            -ms-transform: translateX(252%);
+                transform: translateX(252%);
     }
     #projects{
-        height: 552vh;
+        height: 3449px;
     }
 }
-@media screen and (max-width : 1152px) and (max-height: 616px){
+@media screen and (max-width : 1105px) and (max-height: 482px){
+    #logo {
+        width: 4%;
+    }
+    #home::after {
+        height: 53%;
+        bottom: -35%;
+    }
     #bio{
         height: 175vh;
+    }
+    #projects{
+        height: 3311px;
     }
     .projectBasicInfo .first{
         width: 137px;
         height: 36px;
-        -webkit-transform: translateX(200%);
-            -ms-transform: translateX(200%);
-                transform: translateX(200%);
+        -webkit-transform: translateX(218%);
+            -ms-transform: translateX(218%);
+                transform: translateX(218%);
     }
-    #projects{
-        height: 552vh;
+    .prototypes .slider input[type="radio"] {
+        position: relative;
+        z-index: 1000;
+        margin: 4%;
+        margin-bottom: -16%;
     }
-}
+    #contact {
+        height: 122vh;
+    }
+    #contact .contactContainer{
+        margin-top: -1em;
 
+    }
+}
 @media screen and (max-width : 1090px) {
     .prototypes{
         width: 50vh;
@@ -1565,6 +1691,42 @@ footer a:first-child{
         margin-right: 25px;
     }
 }
+@media screen and (max-width: 834px) and (max-height: 1194px){
+    #home h1 {
+        font-size: 4em;
+        margin-bottom: 0.5em;
+    }
+    #home .card-body {
+        height: 36%;
+    }
+    #home::after {
+        height: 45%;
+        bottom: -17.5%;
+    }
+    #bio{
+        height: 1600px;
+    }
+    #bio h2 {
+        margin-top: -15.4em;
+    }
+    #projects {
+        height: 5500px;
+        margin-bottom: 100px;
+    }
+    .projectBasicInfo .first {
+        width: 137px;
+        height: 36px;
+        -webkit-transform: translateX(343%);
+        -ms-transform: translateX(343%);
+        transform: translateX(343%);
+    }
+    #contact {
+        height: 90vh;
+    }
+    #contact .contactContainer {
+        margin-top: 6em;
+    }
+}
 @media screen and (max-width: 830px){
     #contactLinks a{
         font-size: 14px;
@@ -1582,49 +1744,6 @@ footer a:first-child{
 @media screen and (max-width: 780px){
     #projects{
         height: 880vh;
-    }
-}
-@media screen and (max-width: 768px) {
-    .homeContainer{
-        width: 60%;
-    }
-    #home::after{
-        height: 52%;
-        bottom: -26.75%;
-    }
-    #bio {
-        height: 100vh;
-    }
-    #bio h2{
-        margin-top: 0;
-    }
-    .id-card img{
-        height: 150px;
-        width: 150px;
-    }
-    #projects{
-        height: 470vh;
-    }
-    .prototypes .slider .imgBx {
-        padding: 40px;
-    }
-    .prototypes .slider .imgBx .content h1 {
-        font-size: 3em;
-    }
-    .prototypes .slider .imgBx .content p {
-        font-size: 1em;
-        margin-top: 10px;
-    }
-    #contact{
-        height: 100vh;
-    }
-    .contactContainer {
-        -webkit-transform: translateY(10%);
-            -ms-transform: translateY(10%);
-                transform: translateY(10%);
-    }
-    .contactContainer article{
-        width: 50%;
     }
 }
 @media screen and (max-width: 768px) and (max-height: 1024px) {
@@ -1806,48 +1925,6 @@ footer a:first-child{
         height: 740vh;
     }
 }
-@media screen and (max-width: 540px) {
-    #logo {
-        width: 8%;
-    }
-    header a{
-        font-size: 12px;
-    }
-    .homeContainer{
-        width: 70%;
-    }
-    #home::after{
-        height: 43%;
-        bottom: -29%;
-        right: 52%;
-    }
-    #projects{
-        height: 657vh;
-    }
-    .iconsProjects{
-        display: none;
-    }
-    #projectWeb, #projectCode, #projectPrototype{
-        width: 100%;
-        margin-left: 1.8em;
-        -webkit-transform: translateY(0) translateX(-10%);
-            -ms-transform: translateY(0) translateX(-10%);
-                transform: translateY(0) translateX(-10%);
-    }
-    .contactContainer{
-        padding: 0;
-        -webkit-box-pack: flex-start;
-            -ms-flex-pack: flex-start;
-                justify-content: flex-start;
-    }
-    footer{
-        height: 8%;
-        padding: 0 15px;
-    }
-    #contactFoot{
-        padding: 5px;
-    }
-}
 @media screen and (max-width: 540px) and (max-height: 720px) {
     #logo {
         width: 8%;
@@ -1860,6 +1937,7 @@ footer a:first-child{
     }
     #bio {
         margin-bottom: 90%;
+        height: 1122px;
     }
     #bio h2{
         margin-top: 0;
@@ -2169,119 +2247,6 @@ footer a:first-child{
     #calendly img{
         width: 8%;
         height: 8%;
-    }
-    #footerSeparator, footer{
-        position: relative;
-        top: 10%;
-    }
-    #footerSeparator{
-        display: block;
-        height: 1px;
-        background-color: var(--color-secondary);
-        border: none;
-    }
-    footer{
-        padding: 0;
-        border: none;
-        display: block;
-        bottom: 10%;
-    }
-    #sociallistFooter{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
-
-    #sociallistFooter a{
-        padding-bottom: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding-right: 10px;
-    }
-    
-    #scrollUp{
-        bottom: 10%;
-    }
-}
-@media screen and (max-width: 424px) {
-    #home {
-        height: 100vh;
-        width: 100%;
-        padding: 2em;
-    }
-    #home::after{
-        display: none;
-    }
-    #home h1{
-        margin-top: 0;
-        line-height: 1em;
-        font-size: 2.6em;
-    }
-    .homeContainer{
-        margin-bottom: 2em;
-    }
-    #home .card-body {
-        height: 52%;
-    }
-    #bio{
-        width: 100%;
-        margin-left: 0;
-        margin-top: 200px;
-        margin-bottom: 500px;
-    } 
-    #bio h2{
-        margin-top: -19%;
-    }
-    .skills-card::after{
-        display: none;
-    }
-    #projects{
-        height: 960vh;
-        width: 100%;
-    }
-    .projectBasicInfo ul{
-        display: block;
-        margin: 10px auto;
-    }
-    .projectBasicInfo li{
-        background-color:transparent;
-        text-shadow: none;
-        padding: 2px;
-    }
-    .projectBasicInfo .first{
-        text-align: center;
-        width: 138px;
-        height: 36px;
-        -webkit-transform: translateX(97%);
-            -ms-transform: translateX(97%);
-                transform: translateX(97%);
-    }
-    
-    .prototypes{
-        width: 100%;
-        height: 60%;
-    }
-
-    #contact{
-        width: 100%;
-        height: 100vh;
-    }
-    #contact h2{
-        margin-top:-45%;
-    }
-    #contact .contactContainer{
-        -webkit-transform: translateY(-1%) translateX(0%);
-            -ms-transform: translateY(-1%) translateX(0%);
-                transform: translateY(-1%) translateX(0%);
-    }
-    #calendly{
-        padding: 10px;
-        width: 90%;
-        margin-top: 0;
-    }
-    #calendly img{
-        width: 11%;
-        height: 11%;
     }
     #footerSeparator, footer{
         position: relative;
