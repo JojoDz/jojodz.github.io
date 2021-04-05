@@ -21,7 +21,7 @@ body{
     font-size : 1em; 
     font-family: var(--font-body);
     color: var(--color-body-font);
-    max-width: 100vh;
+    /* max-width: 100vh; */
     /* height: 100%; */
     overflow-x: hidden;
 }
