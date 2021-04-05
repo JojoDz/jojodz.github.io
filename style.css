@@ -2457,7 +2457,7 @@ footer a:first-child{
         width: 100%;
         margin-left: 0;
         margin-bottom: 130%;
-        height: 1500px;
+        height: 1450px;
     } 
     #bio h2{
         margin-top: -19%;
@@ -2466,7 +2466,7 @@ footer a:first-child{
         display: none;
     }
     #projects{
-        height: 733vh;
+        height: 5600px;
         width: 100%;
     }
     .projectBasicInfo ul{
