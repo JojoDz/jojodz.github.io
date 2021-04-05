@@ -2795,14 +2795,74 @@ footer a:first-child{
         margin-top: 1.6em;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-height: 640px) {
+    #home .card-body {
+        height: 45%;
+    }
+    #bio{
+        height: 125vh;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 159%;
+    } 
+    #bio h2{
+        margin-top: -139%;
+    }
+    #projects{
+        height: 798vh;
+        width: 100%;
+    }
+    #projects h2 {
+        margin-bottom: 0.2em;
+        margin: 0.2em;
+    }
+    .projectBasicInfo .first {
+        width: 119px;
+        -webkit-transform: translateX(73%);
+        -ms-transform: translateX(73%);
+        transform: translateX(73%);
+    }
+    #contact{
+        margin-top: -34%;
+    }
+    #contact .contactContainer{
+        -webkit-transform: translateY(0) translateX(0);
+            -ms-transform: translateY(0) translateX(0);
+                transform: translateY(0) translateX(0);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    footer p {
+        margin-top: 1.5em;
+    }
+    #sociallistFooter{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #sociallistFooter a{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-right: 10px;
+    }
+}
+/* @media screen and (max-width: 360px) {
     #projects{
         height: 960vh;
     }
     #contactLinks a:nth-child(2) {
         margin-bottom: 1em;
     }
-}
+} */
 @media screen and (max-width: 320px) {
     main{
         width: 100%;
